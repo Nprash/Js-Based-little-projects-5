@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "popins", sans-serif;
+}
+
+body {
+    background: #2A2438;
+    /* background: #f9f9f9; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 0; */
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 50%); */
+    min-height: 100vh;
+    /* position: sticky; */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    margin: 50px 0 ;
+    /* margin-left: 80px; */
+    box-shadow: 0 50px 75px rgba(0, 0, 0, 0.1);
+    border-left: 50px solid #fff;
+    border-right: 50px solid #fff;
+    border-bottom: 50px solid #fff;
+
+
+}
+
+.container .top {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 30px;
+    padding-bottom: 0;
+    /* background: #EEEEEE; */
+    /* clip-path: polygon(0 20%, 60% 20%, 61% 2%, 100% 50%, 60% 100%, 60% 86%, 1% 86%); */
+}
+
+.container .top .imgbox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container .top .imgbox .box {
+    position: relative;
+    width: 70%;
+    min-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+
+.container .top .imgbox .box img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    object-fit: cover;
+}
+
+.container .top .profileText {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .top .profileText h3 {
+    font-size: 3em;
+    /* letter-spacing: 0.01em; */
+    line-height: 1.2em;
+    font-weight: 500;
+    color: #333;
+    
+}
+.container .top .profileText h3::first-letter{
+    color: blue;
+}
+.container .top .profileText  h6 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-weight: lighter;
+    background-image: linear-gradient(250deg, #2128fd 10%, #21BF73 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container .contentBox {
+    position: relative;
+    min-height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35% 65% ;
+    
+    padding: 20px 0px 0px;
+}
+
+.container .contentBox h3 {
+    border-left: 4px solid blue;
+    padding-left: 10px;
+    line-height: 1em;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.container .contentBox ul {
+    position: relative;
+    margin: 10px 0;
+}
+
+.container .contentBox ul li {
+    list-style: none;
+    margin: 15px 0;
+    line-height: 1em;
+    color: #333;
+    display: flex;
+}
+
+.container .contentBox ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.container .contentBox ul li ion-icon {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #21BF73;
+}
+
+.container .contentBox ul.education li {
+    /*here targeting class use ul.education or directly use .education class with li to get column alignment*/
+    flex-direction: column;
+    margin: 25px 0;
+}
+
+h5 {
+    color: blue;
+}
+
+h4 {
+    color: #333;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+p {
+    color: #333;
+    font-weight: 300;
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.language li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    /* flex-direction: column; */
+
+}
+
+.language li span {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.language .percentage {
+    position: relative;
+    width: 70%;
+    background: #e3e3e3;
+    height: 4px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+    overflow: hidden;
+}
+
+.language .percentage div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    background: #21BF73;
+}
+
+.container .contentBox ul.interest {
+    /*here targeting class use ul.education or directly use .education class with li to get column alignment*/
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container .contentBox ul.interest li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.container .contentBox ul.interest li .icon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    color: #21BF73;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .contentBox ul.interest li .icon ion-icon {
+    color: #21BF73;
+    margin: 0;
+}
+
+p {
+    font-style: 300;
+}
+
+.rightside {
+    padding-left: 40px;
+}
+.rightside .profile p{
+    color: #333;
+    line-height: 1.3;
+    align-self: center;
+    align-items: center;
+}
+
+
+
+
+
+.about.skills .box {
+    position: relative;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.about.skills .box h4 {
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.about.skills .box .percentage {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: #e3e3e3;
+}
+
+.about.skills .box .percentage div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #21BF73;
+}
+
+
+.about.courses ul.courselist li {
+    list-style: none;
+    margin: 15px 0;
+    line-height: 1em;
+    color: #333;
+    display: flex;
+}
+
+.about.courses ul.courselist li ion-icon {
+    font-size: 1.2em;
+    margin-right: 8px;
+    color: #21BF73;
+}
+
+.container .contentBox ul {
+    position: relative;
+    margin: 10px 0;
+}
+
+
+.contentBox2{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 30px auto;
+}
+
+.contentBox2 h3 {
+    min-width: 315px;
+    border-left: 4px solid blue;
+    padding-left: 10px;
+    line-height: 1em;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.1em;
+    margin: 50px auto;
+}
+
+
+.contentBox2 .projects {
+    /*here targeting class use ul.education or directly use .education class with li to get column alignment*/
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contentBox2 .projects li {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+}
+.contentBox2 ul.projects li a{
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+}
+
+.container ul.projects li .icon {
+    /* position: relative; */
+    width: 23px;
+    height: 23px;
+    color: #21BF73;
+}
+
+.experience{
+    margin: 50px auto;
+    /* height: 120vh; */
+}
+.about h3{
+    width: 315px;
+    border-left: 4px solid blue;
+    padding-left: 10px;
+    line-height: 1em;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.1em;
+    margin: 50px 0 20px;
+}
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+}
+
+.about .box .year_company {
+    min-width: 380px;
+    /* margin-bottom: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.about .box .year_company h5 {
+    color: #333;
+    font-weight: 600;
+}
+
+.about .box .year_company h5:nth-child(1) {
+    color: blue;
+}
+.about .box .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: #333;
+    line-height: 1.3;
+
+}
+.about .box .text h4 {
+    color: blue;
+    font-size: 16px;
+    margin: 0;
+}
+.declar{
+    position: relative;
+    height: 40vh;
+    margin: 30px auto;
+}
+.declaration{
+    margin: 30px auto;
+}
+.declaration h3{
+    border-left: 4px solid blue;
+    padding-left: 10px;
+    line-height: 1em;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.place-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+}
+.signature{
+    padding-right: 20px;
+}
+
+/* print button */
+.section-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.print-btn{
+    /* position: sticky; */
+    padding: 8px 20px;
+    background: transparent;
+    border: none;
+    outline: 1px solid dodgerblue;
+    margin: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.print-btn:hover{
+    border:1px #fff;
+    background: dodgerblue;
+}
+.d-none{
+    display: none;;
+}

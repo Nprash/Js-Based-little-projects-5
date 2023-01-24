@@ -1,0 +1,64 @@
+.glow {
+    position: absolute;
+    font-size: 2rem;
+    color: #222;
+    cursor: pointer;
+    text-align: center;
+    margin: auto 0;
+}
+
+.glow::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #6255f7;
+    background-color: transparent;
+    /* background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%); */
+    background-clip: text;
+    -web-kit-background-clip: text;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;/*#6255f7*/
+    border-right: 4px solid #6255f7;
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+
+/* flying card style */
+.flyingpic1{
+    /* background-image: url(./clip-strategic-plan-for-business.png); */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    pointer-events: none;
+    position: absolute;
+    object-fit: cover;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: anima 6s linear;
+}
+
+@keyframes anima {
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%,-5000%);
+        opacity: 1;
+        filter: hue-rotate(720deg);
+    }
+}
