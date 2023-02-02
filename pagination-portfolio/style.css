@@ -1,60 +1,68 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
-*,::after::before{
+*,
+::after::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
-ul a{
+
+ul a {
     text-decoration: none;
 }
+
 /* .nav-center{
     height: auto;
     width: 100%;
     background:#97c8f1;
     margin: 0;
 } */
-.navheader{
+.navheader {
     height: auto;
     display: flex;
     justify-content: space-between;
     /* padding: 1rem; */
-    background:#2A2438;
+    background: #2A2438;
     margin: 0px;
 }
-.menubtn{
+
+.menubtn {
     /* width: 35px; */
     border: none;
     background-color: transparent;
     transition: all 0.3s linear;
 }
-.menubtn img{
+
+.menubtn img {
     width: 50%;
 }
-.logo{
+
+.logo {
     background: #2A2438;
     width: 50px;
     /* color: #352F44; */
 }
-.nav-center a{
+
+.nav-center a {
     text-decoration: none;
     font-size: 20px;
-    padding-inline:10px;
+    padding-inline: 10px;
     display: flex;
     align-items: center;
     /* gap: 20px; */
 }
-.links-container{
+
+.links-container {
     height: 0;
-    background:#352F44;
+    background: #352F44;
     overflow: hidden;
 }
 
@@ -66,16 +74,17 @@ ul a{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
-.fixed-nav .links a{
+
+.fixed-nav .links a {
     transition: all 0.3s linear;
     color: #007bff;
 }
 
-.fixed-nav .links a:hover{
+.fixed-nav .links a:hover {
     color: lightgrey;
 }
 
-.social-icons{
+.social-icons {
     max-width: 150px;
     position: relative;
     margin-right: 200px;
@@ -90,13 +99,16 @@ ul a{
     inset 5px 5px 20px rgba(255,255,255,0.2),
     inset -5px -5px 15px rgba(33, 47, 245, 0.75); */
 }
-.socialIcons{
+
+.socialIcons {
     opacity: 0.7;
 }
-.socialIcons:hover{
+
+.socialIcons:hover {
     opacity: 1;
 }
-.showlinks{
+
+.showlinks {
     width: 100%;
     height: 10rem;
     display: flex;
@@ -105,13 +117,15 @@ ul a{
     margin: 0;
     transition: all 1s linear;
 }
-.links a{
-    margin:10px ;
+
+.links a {
+    margin: 10px;
     font-size: 20px;
-    padding-inline:10px;
-    /* transition: all 0.3s linear; */
+    padding-inline: 10px;
+    transition: all 0.3s linear;
 }
-.links a:hover{
+
+.links a:hover {
     background-color: #007bff;
     border-radius: 12px;
     text-decoration: none;
@@ -119,66 +133,71 @@ ul a{
 
 }
 
-.social-icons li{
+.social-icons li {
     margin-right: 20px;
     font-size: 20px;
 }
 
-@media (min-width: 820px){
-    nav{
-        background:#352F44;
+@media (min-width: 820px) {
+    nav {
+        background: #352F44;
     }
-    .nav-center{
+
+    .nav-center {
         /* max-width: 1170px; */
-        display:flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
-        background:#2A2438;
+        background: #2A2438;
         margin: 0px;
         padding: 10px 15px;
     }
 
-    .menubtn{
+    .menubtn {
         display: none;
     }
-    .links-container{
-    background: #2A2438;
-    height: auto !important;
+
+    .links-container {
+        background: #2A2438;
+        height: auto !important;
     }
-    .links{
-    /* height: auto; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0;
+
+    .links {
+        /* height: auto; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
     }
-    .showlinks{
+
+    .showlinks {
         display: flex;
         flex-direction: row;
         align-items: center;
         margin-bottom: 0;
     }
-    footer{
+
+    footer {
         height: auto;
         font-size: 14px;
         background: hsl(209, 61%, 16%);
         padding: 1rem;
-        
+
     }
 
-    
+
 }
 
 
-@media (max-width:785px){
+@media (max-width:785px) {
 
-    footer{
+    footer {
         width: 100%;
         height: auto;
         font-size: 14px;
         background: hsl(209, 61%, 16%);
         padding: 1rem;
-        display:flex;
+        display: flex;
         /* flex-direction: column; */
         flex-wrap: wrap;
         white-space: wrap;
@@ -186,13 +205,14 @@ ul a{
         background: hsl(209, 61%, 16%);
         padding: 1rem;
     }
-    .links{
+
+    .links {
         height: 220px;
         /* display: flex; */
-    /* justify-content: space-between; */
-    align-items: center;
-    margin-bottom: 10px;
-    width: fit-content;
+        /* justify-content: space-between; */
+        align-items: center;
+        margin-bottom: 10px;
+        width: fit-content;
     }
 
 }
@@ -202,7 +222,7 @@ ul a{
 
 /* FOOTER DIGITAL CLOCK */
 
-.top-link{
+.top-link {
     font-size: 1.2rem;
     position: fixed;
     bottom: 3rem;
@@ -218,7 +238,8 @@ ul a{
     /* visibility: hidden; */
     z-index: -100;
 }
-.show-top-link{
+
+.show-top-link {
     visibility: visible;
     z-index: 100;
     width: 2rem;
@@ -232,19 +253,23 @@ ul a{
     inset 5px 5px 20px rgba(255,255,255,0.2),
     inset -5px -5px 15px rgba(33, 47, 245, 0.75); */
 }
-@keyframes bounce{
-    0%{
+
+@keyframes bounce {
+    0% {
         transform: scale(1);
     }
-    50%{
+
+    50% {
         transform: scale(1.5);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
+
 /* sections and title  */
-.section{
+.section {
     padding-bottom: 5rem;
 }
 
@@ -253,11 +278,12 @@ ul a{
 #projects,
 #resume,
 #skill-set,
-#achievements{
+#achievements {
     height: auto;
     /* width:100%; */
 }
-#home{
+
+#home {
     background: #352F44;
 }
 
@@ -272,7 +298,8 @@ ul a{
     transition: transform .9s;
     cursor: pointer;
 }
-.hero-img:hover{
+
+.hero-img:hover {
     transform: scale(1.2);
     transition: all linear .9s;
 }
@@ -280,30 +307,64 @@ ul a{
 
 
 /* ===================for resume section  */
-#resume{
+#resume {
     background: #352F44;
+    /* width: 100%;
+    height: 100vh; */
+
 }
-.resume{
+
+
+.resume-scroll {
     width: 100%;
     height: 100vh;
-    background: #352F44;
+    /* overflow-y: scroll; */
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #2A2438;
+    
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #007BFF;
+    border-radius: 10px;
+}
+/* ::-webkit-scrollbar-button{
+    background-color: #007BFF;
+} */
+::-webkit-scrollbar-track-piece:end {
+    background: #2A2438;
+    margin-bottom: 10px; 
+}
+::-webkit-scrollbar-track-piece:start {
+    background: orange;
+    margin-top: 10px;
+}
+/* these are working in resume build css file */
+
+
+
+
 
 /* ===================for resume section  */
 
 /* ==========================skill-set======================= */
-#skill-set{
+#skill-set {
     background: #1A1831;
     color: lightgrey;
 }
+
 /* ========================skill-set ================================*/
 
 /* =================projects============================= */
 
-#projects{
+#projects {
     background: #322F3D;
 }
-#achievements{
+
+#achievements {
     background: #432C7A;
 }
 
@@ -316,17 +377,17 @@ ul a{
 
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right
-            , #f9ff00, #d20928);
+    background: linear-gradient(to right, #f9ff00, #d20928);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
 
-.text-infos{
+.text-infos {
     color: orange;
 }
-.findbelow-btn{
+
+.findbelow-btn {
     text-decoration: none;
     color: orange;
     font-weight: 600;
@@ -335,90 +396,111 @@ ul a{
     background: rgb(253, 218, 153);
     border-radius: 8px;
 }
-.findbelow-btn:hover{
+
+.findbelow-btn:hover {
     text-decoration: none;
 }
 
-.cardweb{
+.cardweb {
     width: 450px;
 }
 
 
-.img-1{
-    transition: transform .9s ;
-}
-.img-1:hover{
-    transform: scale(1.09);
-    transition: transform .9s ;
-}
-.img-2{
-    transition: transform .9s ;
-}
-.img-2:hover{
-    transform: scale(1.09);
-    transition: transform .9s ;
-}
-.img-3{
-    transition: transform .9s ;
-}
-.img-3:hover{
-    transform: scale(1.09);
-    transition: transform .9s ;
-}
-.img-4{
-    transition: transform .9s ;
-}
-.img-4:hover{
-    transform: scale(1.09);
-    transition: transform .9s ;
-}
-.img-5{
-    transition: transform .9s ;
-}
-.img-5:hover{
-    transform: scale(1.09);
-    transition: transform .9s ;
-}
-.img-6{
-    transition: transform .9s ;
-}
-.img-6:hover{
-    transform: scale(1.09);
-    transition: transform .9s ;
-}
-.img-7{
-    transition: transform .9s ;
-}
-.img-7:hover{
-    transform: scale(1.09);
-    transition: transform .9s ;
-}
-.img-8{
-    transition: transform .9s ;
-}
-.img-8:hover{
-    transform: scale(1.09);
-    transition: transform .9s ;
-}
-.img-9{
-    transition: transform .9s ;
-}
-.img-9:hover{
-    transform: scale(1.09);
-    transition: transform .9s ;
-}
-.img-10{
-    transition: transform .9s ;
-}
-.img-10:hover{
-    transform: scale(1.09);
-    transition: transform .9s ;
+.img-1 {
+    transition: transform .9s;
 }
 
-.btndownload{
+.img-1:hover {
+    transform: scale(1.09);
+    transition: transform .9s;
+}
+
+.img-2 {
+    transition: transform .9s;
+}
+
+.img-2:hover {
+    transform: scale(1.09);
+    transition: transform .9s;
+}
+
+.img-3 {
+    transition: transform .9s;
+}
+
+.img-3:hover {
+    transform: scale(1.09);
+    transition: transform .9s;
+}
+
+.img-4 {
+    transition: transform .9s;
+}
+
+.img-4:hover {
+    transform: scale(1.09);
+    transition: transform .9s;
+}
+
+.img-5 {
+    transition: transform .9s;
+}
+
+.img-5:hover {
+    transform: scale(1.09);
+    transition: transform .9s;
+}
+
+.img-6 {
+    transition: transform .9s;
+}
+
+.img-6:hover {
+    transform: scale(1.09);
+    transition: transform .9s;
+}
+
+.img-7 {
+    transition: transform .9s;
+}
+
+.img-7:hover {
+    transform: scale(1.09);
+    transition: transform .9s;
+}
+
+.img-8 {
+    transition: transform .9s;
+}
+
+.img-8:hover {
+    transform: scale(1.09);
+    transition: transform .9s;
+}
+
+.img-9 {
+    transition: transform .9s;
+}
+
+.img-9:hover {
+    transform: scale(1.09);
+    transition: transform .9s;
+}
+
+.img-10 {
+    transition: transform .9s;
+}
+
+.img-10:hover {
+    transform: scale(1.09);
+    transition: transform .9s;
+}
+
+.btndownload {
     /* background: #007bff; */
     border: 1px solid #007bff;
 }
-.btndownload:hover{
+
+.btndownload:hover {
     background: #007bff;
 }
