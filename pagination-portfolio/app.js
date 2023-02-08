@@ -82,6 +82,7 @@ scrollLinks.forEach((lynk) => {
 const scrollspylinks = document.querySelectorAll('#simple-list-example a');
 const sections = document.querySelectorAll('.scrollspy-example h4');
 
+
 function makeActive(scrollspylinks) {
     for (let i = 0; i < scrollspylinks.length; i++) {
         scrollspylinks[i].classList.remove('active');
@@ -115,8 +116,8 @@ const day = currentDate.getDate();
 const month = currentDate.getMonth() + 1; // months are 0-indexed, so we need to add 1
 const year = currentDate.getFullYear();
 
-document.getElementById('fdate').innerHTML = day+" /";
-document.getElementById('fmonth').innerHTML = month+" /";
+document.getElementById('fdate').innerHTML = day + " /";
+document.getElementById('fmonth').innerHTML = month + " /";
 document.getElementById('fyear').innerHTML = year;
 
 
@@ -172,8 +173,8 @@ let t1 = gsap.timeline()
 
 // homepage objects
 t1.from("#herotext", {
-    opacity:0,
-    x:-320,
+    opacity: 0,
+    x: -320,
 })
 
 t1.from("#heropic", {
@@ -181,30 +182,44 @@ t1.from("#heropic", {
     x: 150,
 })
 
-t1.from("#descanimate",{
-    opacity:0,
-    y:150,
+t1.from("#descanimate", {
+    opacity: 0,
+    y: 150,
 })
 // bottom social icons
-t1.from("#facebookanimate",{
-    opacity:0,
-    y:-50,
+t1.from("#facebookanimate", {
+    opacity: 0,
+    y: -50,
 })
-t1.from("#githubanimate",{
-    opacity:0,
-    y:50,
+t1.from("#githubanimate", {
+    opacity: 0,
+    y: 50,
 })
 // skill course
 
-t1.from("#skillnimate",0.5,{
-    opacity:0,
-    x:320,
+t1.from("#skillnimate", 0.5, {
+    opacity: 0,
+    x: 320,
 })
-t1.from("#skilimage",{
-    opacity:0,
-    x:-320,
+t1.from("#skilimage", {
+    opacity: 0,
+    x: -320,
 })
-t1.from("#courseanimate",0.5,{
-    opacity:0,
-    x:-320,
+t1.from("#courseanimate", 0.5, {
+    opacity: 0,
+    x: -320,
 })
+
+// for visitors count
+let visits = 0;
+
+if (localStorage.getItem("visits")) {
+    visits = parseInt(localStorage.getItem("visits"));
+}
+
+visits += 1;
+localStorage.setItem("visits", visits);
+
+// console.log("Number of visits: " + visits);
+const visitcount = document.querySelector(".visitcount");
+visitcount.innerHTML = visits;
