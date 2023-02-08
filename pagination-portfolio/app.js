@@ -110,56 +110,56 @@ window.addEventListener('scroll', function () {
 
 // for footer date
 
-const currentDate = new Date();
+// const currentDate = new Date();
 
-const day = currentDate.getDate();
-const month = currentDate.getMonth() + 1; // months are 0-indexed, so we need to add 1
-const year = currentDate.getFullYear();
+// const day = currentDate.getDate();
+// const month = currentDate.getMonth() + 1; // months are 0-indexed, so we need to add 1
+// const year = currentDate.getFullYear();
 
-document.getElementById('fdate').innerHTML = day + " /";
-document.getElementById('fmonth').innerHTML = month + " /";
-document.getElementById('fyear').innerHTML = year;
+// document.getElementById('fdate').innerHTML = day + " /";
+// document.getElementById('fmonth').innerHTML = month + " /";
+// document.getElementById('fyear').innerHTML = year;
 
 
 
-//================ digital clock-- at footer section
-let hr = document.querySelector('#hr');
-let mn = document.querySelector('#mn');
-let sc = document.querySelector('#sc');
+// //================ digital clock-- at footer section
+// let hr = document.querySelector('#hr');
+// let mn = document.querySelector('#mn');
+// let sc = document.querySelector('#sc');
 
-setInterval(() => {
-    let day = new Date();
-    let hh = day.getHours() * 30;
-    let mm = day.getMinutes() * 6;
-    let ss = day.getSeconds() * 6;
-    //digital clock
-    let hours = document.getElementById('hours');
-    let minutes = document.getElementById('minutes');
-    let seconds = document.getElementById('seconds');
-    let ampm = document.getElementById('ampm');
+// setInterval(() => {
+//     let day = new Date();
+//     let hh = day.getHours() * 30;
+//     let mm = day.getMinutes() * 6;
+//     let ss = day.getSeconds() * 6;
+//     //digital clock
+//     let hours = document.getElementById('hours');
+//     let minutes = document.getElementById('minutes');
+//     let seconds = document.getElementById('seconds');
+//     let ampm = document.getElementById('ampm');
 
-    let h = new Date().getHours();
-    let m = new Date().getMinutes();
-    let s = new Date().getSeconds();
+//     let h = new Date().getHours();
+//     let m = new Date().getMinutes();
+//     let s = new Date().getSeconds();
 
-    let am = h >= 12 ? "PM" : "AM"
+//     let am = h >= 12 ? "PM" : "AM"
 
-    //convert 24h clock to 12h clock
+//     //convert 24h clock to 12h clock
 
-    if (h > 12) {
-        h = h - 12;
-    }
-    // add zero before sngle digite
+//     if (h > 12) {
+//         h = h - 12;
+//     }
+//     // add zero before sngle digite
 
-    h = (h < 10) ? "0" + h : h
-    m = (m < 10) ? "0" + m : m
-    s = (s < 10) ? "0" + s : s
+//     h = (h < 10) ? "0" + h : h
+//     m = (m < 10) ? "0" + m : m
+//     s = (s < 10) ? "0" + s : s
 
-    hours.innerHTML = h;
-    minutes.innerHTML = m;
-    seconds.innerHTML = s;
-    ampm.innerHTML = am;
-});
+//     hours.innerHTML = h;
+//     minutes.innerHTML = m;
+//     seconds.innerHTML = s;
+//     ampm.innerHTML = am;
+// });
 
 
 // form to
@@ -220,6 +220,6 @@ if (localStorage.getItem("visits")) {
 visits += 1;
 localStorage.setItem("visits", visits);
 
-// console.log("Number of visits: " + visits);
+console.log("Number of visits: " + visits);
 const visitcount = document.querySelector(".visitcount");
 visitcount.innerHTML = visits;
